@@ -10,13 +10,8 @@ import GameplayKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate { //We add the contact delegate to dected collisions and send notifications when they happen, hence react to them happening
     
-    var entities = [GKEntity]()
-    var graphs = [String : GKGraph]()
-    
     private var lastUpdateTime : TimeInterval = 0
   
-    private var spinnyNode : SKShapeNode?
-    
     //Custom vars:
     let player = SKSpriteNode(imageNamed: "player-submarine")
     var touchingPlayer = false
