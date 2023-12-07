@@ -15,6 +15,10 @@
 		63693B5A2B20DF1E0056E7FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63693B582B20DF1E0056E7FA /* Main.storyboard */; };
 		63693B5C2B20DF200056E7FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63693B5B2B20DF200056E7FA /* Assets.xcassets */; };
 		63693B5F2B20DF200056E7FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63693B5D2B20DF200056E7FA /* LaunchScreen.storyboard */; };
+		63693B662B20E04C0056E7FA /* Bubbles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 63693B652B20E04C0056E7FA /* Bubbles.sks */; };
+		63693B682B20F3530056E7FA /* cyborg-ninja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63693B672B20F3530056E7FA /* cyborg-ninja.mp3 */; };
+		63693B6A2B20F3A00056E7FA /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 63693B692B20F3A00056E7FA /* explosion.wav */; };
+		63693B6C2B20F4780056E7FA /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 63693B6B2B20F4780056E7FA /* Explosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		63693B592B20DF1E0056E7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63693B5B2B20DF200056E7FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63693B5E2B20DF200056E7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63693B652B20E04C0056E7FA /* Bubbles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Bubbles.sks; sourceTree = "<group>"; };
+		63693B672B20F3530056E7FA /* cyborg-ninja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "cyborg-ninja.mp3"; path = "../../../../Downloads/Project Source Code 2019-05-25/Assets/Project1/cyborg-ninja.mp3"; sourceTree = "<group>"; };
+		63693B692B20F3A00056E7FA /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = explosion.wav; path = "../../../../Downloads/Project Source Code 2019-05-25/Assets/Project1/explosion.wav"; sourceTree = "<group>"; };
+		63693B6B2B20F4780056E7FA /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				63693B502B20DF1E0056E7FA /* GameScene.sks */,
 				63693B522B20DF1E0056E7FA /* Actions.sks */,
 				63693B542B20DF1E0056E7FA /* GameScene.swift */,
+				63693B6B2B20F4780056E7FA /* Explosion.sks */,
+				63693B672B20F3530056E7FA /* cyborg-ninja.mp3 */,
+				63693B692B20F3A00056E7FA /* explosion.wav */,
+				63693B652B20E04C0056E7FA /* Bubbles.sks */,
 				63693B562B20DF1E0056E7FA /* GameViewController.swift */,
 				63693B582B20DF1E0056E7FA /* Main.storyboard */,
 				63693B5B2B20DF200056E7FA /* Assets.xcassets */,
@@ -130,10 +142,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				63693B5A2B20DF1E0056E7FA /* Main.storyboard in Resources */,
+				63693B662B20E04C0056E7FA /* Bubbles.sks in Resources */,
+				63693B6A2B20F3A00056E7FA /* explosion.wav in Resources */,
 				63693B512B20DF1E0056E7FA /* GameScene.sks in Resources */,
 				63693B5C2B20DF200056E7FA /* Assets.xcassets in Resources */,
 				63693B5F2B20DF200056E7FA /* LaunchScreen.storyboard in Resources */,
+				63693B682B20F3530056E7FA /* cyborg-ninja.mp3 in Resources */,
 				63693B532B20DF1E0056E7FA /* Actions.sks in Resources */,
+				63693B6C2B20F4780056E7FA /* Explosion.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,8 +320,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,8 +347,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
