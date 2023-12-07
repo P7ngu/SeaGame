@@ -102,7 +102,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate { //We add the contact delega
         
         //to remove the enemies off the screen
         for node in children {
-            if node.position.x < -700 {
+            if node.position.y < -300 {
                 node.removeFromParent()
             }
         }
