@@ -23,6 +23,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate { //We add the contact delega
     var gameTimer: Timer? //it's optional
     let scoreLabel = SKLabelNode(fontNamed: "AvenireNextCondensed-Bold")
     var score = 0 {
+        //observer:
         didSet {
             scoreLabel.text = "SCORE: \(score)"
         }
@@ -35,7 +36,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate { //We add the contact delega
         scoreLabel.position.y = 125
         addChild(scoreLabel)
         score = 0
-        //we use propery observer to update the ui every time the value changes
+        //we use property observer to update the ui every time the value changes
         
         let background = SKSpriteNode(imageNamed: "water")
         background.zPosition = -1 //on top or below other sprites? that means behind all the others.
@@ -54,7 +55,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate { //We add the contact delega
         player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.size)
         player.physicsBody?.categoryBitMask = 1 //For collision purpose, and collision detection, in the contact test mask
         //sprite.physicsBody?.velocity = CGVector(dx: -500, dy: 0)
-        player.physicsBody?.linearDamping = .infinity // friction is useless in water
+        player.physicsBody?.linearDamping = .infinity // friction is useless in water, we use this to not make the player fall since the iphone is upside down
         
         physicsWorld.contactDelegate = self // to set to use the SKPh.ContactDelegate
         
@@ -68,19 +69,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate { //We add the contact delega
     
     override func didMove(to view: SKView) {
         gameTimer = Timer.scheduledTimer(timeInterval: 1.8, target: self, selector: #selector(createEnemy), userInfo: nil, repeats: true)
-    }
-    
-    
-    func touchDown(atPoint pos : CGPoint) {
-       
-    }
-    
-    func touchMoved(toPoint pos : CGPoint) {
-       
-    }
-    
-    func touchUp(atPoint pos : CGPoint) {
-      
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -107,10 +95,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate { //We add the contact delega
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
        // for t in touches { self.touchUp(atPoint: t.location(in: self)) }
         touchingPlayer = false
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-       // for t in touches { self.touchUp(atPoint: t.location(in: self)) }
     }
     
     
